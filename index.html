@@ -285,12 +285,59 @@ Nuestro equipo de especialistas certificados en auditoría de sistemas, gestión
 
     <!-- Contact Start -->
     <form action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="d5fe3198-ea73-4b2c-b296-41489c11c23a">
-          <input type="text" name="name" required>
-        <input type="email" name="email" required>
-          <textarea name="message" required></textarea>
-          <button type="submit">Submit</button>
-    </form>
+
+    <input type="hidden" name="access_key" value="d5fe3198-ea73-4b2c-b296-41489c11c23a">
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Tu Nombre"
+                    required>
+                <label for="name">Tu Nombre</label>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Tu Correo Electrónico"
+                    required>
+                <label for="email">Tu Correo Electrónico</label>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-floating">
+                <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    placeholder="Escribe tu mensaje aquí"
+                    style="height: 200px"
+                    required></textarea>
+                <label for="message">Escribe tu mensaje aquí</label>
+            </div>
+        </div>
+
+        <div class="col-12 text-center">
+            <button class="btn btn-primary py-3 px-5" type="submit">
+                Enviar Mensaje
+            </button>
+        </div>
+
+    </div>
+
+</form>
     <!-- Contact End -->
 
     <!-- Footer Start -->
