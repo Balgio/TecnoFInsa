@@ -285,57 +285,94 @@ Nuestro equipo de especialistas certificados en auditoría de sistemas, gestión
 
     <!-- Contact Start -->
     <div id="contactanos" class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title text-primary">Contactanos</h6>
-                <h1 class="display-5 mb-5">Ponte en contacto con nosotros</h1>
-            </div>
-            <div class="row g-5 justify-content-center">
-                <div class="col-xl-8 wow fadeIn" data-wow-delay="0.3s">                    
+    <div class="container">
+        <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h6 class="section-title text-primary">Contáctanos</h6>
+            <h1 class="display-5 mb-5">Ponte en contacto con nosotros</h1>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+            <div class="col-xl-8 wow fadeIn" data-wow-delay="0.3s">
+
+                <form action="mailto:balmore.montano@gmail.com"
+                      method="post"
+                      enctype="text/plain">
+
                     <div class="row">
+
                         <div class="col-sm-6 control-group">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                                <input type="text"
+                                       class="form-control"
+                                       id="name"
+                                       name="Nombre"
+                                       placeholder="Tu Nombre"
+                                       required>
                                 <label for="name">Tu Nombre</label>
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
+
                         <div class="col-sm-6 control-group">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" />
+                                <input type="email"
+                                       class="form-control"
+                                       id="email"
+                                       name="Correo"
+                                       placeholder="Tu correo electrónico"
+                                       required>
                                 <label for="email">Tu correo electrónico</label>
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
+
                         <div class="col-sm-6 control-group">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Mobile" />
+                                <input type="text"
+                                       class="form-control"
+                                       id="mobile"
+                                       name="Teléfono"
+                                       placeholder="Tel. Móvil">
                                 <label for="mobile">Tel. Móvil</label>
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
+
                         <div class="col-sm-6 control-group">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" />
+                                <input type="text"
+                                       class="form-control"
+                                       id="subject"
+                                       name="Asunto"
+                                       placeholder="Asunto"
+                                       required>
                                 <label for="subject">Asunto</label>
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
+
                         <div class="col-12 control-group">
                             <div class="form-floating">
-                                <textarea style="height: 200px" class="form-control" id="message" placeholder="Message"></textarea>
+                                <textarea style="height: 200px"
+                                          class="form-control"
+                                          id="message"
+                                          name="Mensaje"
+                                          placeholder="Escribe tu mensaje aquí"
+                                          required></textarea>
                                 <label for="message">Escribe tu mensaje aquí</label>
                             </div>
-                            <p class="help-block text-danger"></p>
                         </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary py-3 px-4" type="submit">Enviar Mensaje</button>
+
+                        <div class="col-12 text-center mt-4">
+                            <button class="btn btn-primary py-3 px-4" type="submit">
+                                Enviar Mensaje
+                            </button>
                         </div>
+
                     </div>
-                </div>
+
+                </form>
+
             </div>
         </div>
     </div>
+</div>
     <!-- Contact End -->
 
     <!-- Footer Start -->
