@@ -82,64 +82,115 @@
 
 
         <!-- Practice Start -->
-    <div id="servicios" class="container-fluid py-5">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title text-primary">Areas de Servicios</h6>
-                <h1 class="display-5 mb-5">Conoce nuestros catálogo de servicios</h1>
-            </div>
-            <div class="row g-4 g-md-0 text-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="practice-item h-100 p-4 border-bottom border-end wow fadeIn" data-wow-delay="0.1s">
-                        <i class="fa fa-user-shield fa-4x text-primary mb-4"></i>
-                        <h4 class="mb-3">Auditoría de Sistemas</h4>
-                        <p>Evaluamos controles y procesos tecnológicos para identificar riesgos y oportunidades de mejora.</p>
-                        <a href=""><i class="fa fa-arrow-right fa-2x text-primary"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="practice-item h-100 p-4 border-bottom border-lg-end wow fadeIn" data-wow-delay="0.3s">
-                        <i class="fas fa-network-wired fa-4x text-primary mb-4"></i>
-                        <h4 class="mb-3">Consultoría Informática</h4>
-                        <p>Asesoramos a su empresa para optimizar el uso de la tecnología y alcanzar sus objetivos estratégicos</p>
-                        <a href=""><i class="fa fa-arrow-right fa-2x text-primary"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="practice-item h-100 p-4 border-bottom border-end border-lg-end-0 wow fadeIn" data-wow-delay="0.5s">
-                        <i class="fas fa-laptop-code fa-4x text-primary mb-4"></i>
-                        <h4 class="mb-3">Desarrollo de Software</h4>
-                        <p>Creamos soluciones tecnológicas personalizadas que impulsan la eficiencia y el crecimiento.</p>
-                        <a href=""><i class="fa fa-arrow-right fa-2x text-primary"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="practice-item h-100 p-4 border-bottom border-lg-bottom-0 border-lg-end wow fadeIn" data-wow-delay="0.1s">
-                        <i class="fas fa-shield-alt fa-4x text-primary mb-4"></i>
-                        <h4 class="mb-3">Ciberseguridad</h4>
-                        <p>Verificamos y protegemos sus activos digitales mediante controles y estrategias de seguridad efectivas.</p>
-                        <a href=""><i class="fa fa-arrow-right fa-2x text-primary"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="practice-item h-100 p-4 border-end wow fadeIn" data-wow-delay="0.3s">
-                        <i class="fas fa-server fa-4x text-primary mb-4"></i>
-                        <h4 class="mb-3">Infraestructura IT</h4>
-                        <p>Apoyamos a implementar plataformas tecnológicas seguras, estables y preparadas para crecer con su negocio.</p>
-                        <a href=""><i class="fa fa-arrow-right fa-2x text-primary"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="practice-item h-100 p-4 wow fadeIn" data-wow-delay="0.5s">
-                        <i class="fas fa-graduation-cap fa-4x text-primary mb-4"></i>
-                        <h4 class="mb-3">Capacitaciones</h4>
-                        <p>Fortalecemos las competencias de su equipo mediante formación especializada y práctica.</p>
-                        <a href=""><i class="fa fa-arrow-right fa-2x text-primary"></i></a>
-                    </div>
-                </div>
+    <!-- DETALLE DE SERVICIOS -->
+<div id="detalle-servicio" class="container py-5">
+    
+    <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+        <h6 class="section-title text-primary">Detalle de Servicios</h6>
+        <h1 class="display-6" id="titulo-servicio">Seleccione un servicio</h1>
+        <p id="descripcion-servicio">Haz clic en un área para ver los servicios específicos.</p>
+    </div>
+
+    <div class="row g-4" id="contenido-servicios">
+
+        <!-- Auditoría -->
+        <div class="col-md-6 col-lg-4 servicio-item" data-servicio="auditoria">
+            <div class="bg-light p-4 rounded h-100">
+                <h5 class="text-primary">Auditoría de Sistemas</h5>
+                <ul>
+                    <li>Auditoría de controles TI (ITGC)</li>
+                    <li>Evaluación de accesos y usuarios</li>
+                    <li>Auditoría de cumplimiento normativo</li>
+                    <li>Revisión de cambios (Change Management)</li>
+                    <li>Auditoría de sistemas ERP/CRM</li>
+                    <li>Evaluación de integridad de datos</li>
+                    <li>Auditoría de logs</li>
+                    <li>Gestión de riesgos tecnológicos</li>
+                </ul>
             </div>
         </div>
+
+        <!-- Consultoría -->
+        <div class="col-md-6 col-lg-4 servicio-item" data-servicio="consultoria">
+            <div class="bg-light p-4 rounded h-100">
+                <h5 class="text-primary">Consultoría Informática</h5>
+                <ul>
+                    <li>Transformación digital</li>
+                    <li>Optimización de procesos</li>
+                    <li>Arquitectura tecnológica</li>
+                    <li>Gobierno de TI</li>
+                    <li>Planificación estratégica IT</li>
+                    <li>Implementación ITIL / COBIT</li>
+                    <li>Optimización de costos tecnológicos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Desarrollo -->
+        <div class="col-md-6 col-lg-4 servicio-item" data-servicio="software">
+            <div class="bg-light p-4 rounded h-100">
+                <h5 class="text-primary">Desarrollo de Software</h5>
+                <ul>
+                    <li>Sistemas web empresariales</li>
+                    <li>Aplicaciones móviles</li>
+                    <li>Desarrollo de APIs</li>
+                    <li>Automatización de procesos</li>
+                    <li>Sistemas ERP / CRM</li>
+                    <li>Mantenimiento de aplicaciones</li>
+                    <li>Dashboards y BI</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Ciberseguridad -->
+        <div class="col-md-6 col-lg-4 servicio-item" data-servicio="ciberseguridad">
+            <div class="bg-light p-4 rounded h-100">
+                <h5 class="text-primary">Ciberseguridad</h5>
+                <ul>
+                    <li>Evaluación de vulnerabilidades</li>
+                    <li>Pentesting</li>
+                    <li>Implementación de firewalls</li>
+                    <li>Monitoreo de seguridad</li>
+                    <li>Gestión de incidentes</li>
+                    <li>Hardening de sistemas</li>
+                    <li>Protección contra ransomware</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Infraestructura -->
+        <div class="col-md-6 col-lg-4 servicio-item" data-servicio="infraestructura">
+            <div class="bg-light p-4 rounded h-100">
+                <h5 class="text-primary">Infraestructura IT</h5>
+                <ul>
+                    <li>Implementación de servidores</li>
+                    <li>Administración de redes</li>
+                    <li>Virtualización</li>
+                    <li>Servicios en la nube</li>
+                    <li>Backups empresariales</li>
+                    <li>Monitoreo de infraestructura</li>
+                    <li>Alta disponibilidad</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Capacitaciones -->
+        <div class="col-md-6 col-lg-4 servicio-item" data-servicio="capacitacion">
+            <div class="bg-light p-4 rounded h-100">
+                <h5 class="text-primary">Capacitaciones</h5>
+                <ul>
+                    <li>Seguridad informática</li>
+                    <li>Concientización en ciberseguridad</li>
+                    <li>Uso de herramientas IT</li>
+                    <li>Buenas prácticas tecnológicas</li>
+                    <li>Capacitación en software empresarial</li>
+                    <li>Talleres personalizados</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
+</div>
     <!-- Practice End -->
      
     <!-- Footer Start -->
